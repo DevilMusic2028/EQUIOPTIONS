@@ -25,14 +25,14 @@ Services section:
 
 Stats section:
 - correct columning
-- 
+- differentiate, stand out
 
 Contacts Section:
 - Simplify to "Get in Touch"
-- 
+- Remove Map
 
 FAQ section:
 - not done yet
 
 Footer section:
-- .
+- trim
