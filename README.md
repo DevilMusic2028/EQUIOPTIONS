@@ -6,10 +6,14 @@
 
 Overall:
 - Language changes, updates from DeepSeek
-- Backgrounds
+- Backgrounds and colors
+- Perfectionist details
+- Remove redundancy, cleanup
+- make fallbacks for all possible
+- separate this readme from the todo
 
 Hero/Header section:
-- Header Equioptions -> EQ.
+- Header Equioptions -> EQ
 - Tagline in two lines
 - Investors/Listings page on two endpoints
 - Place these endpoints visibly on hero section

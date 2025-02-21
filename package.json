@@ -1,0 +1,32 @@
+{
+  "name": "equioptions",
+  "version": "1.0.0",
+  "description": "equioptions",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaadhyamRana/EQUIOPTIONS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaadhyamRana/EQUIOPTIONS/issues"
+  },
+  "homepage": "https://github.com/MaadhyamRana/EQUIOPTIONS#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.7"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.7"
+  }
+}

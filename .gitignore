@@ -1,0 +1,33 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Build output
+css/style.css # Generated CSS file (development)
+css/*.css.map # CSS source maps
+.DS_Store # macOS system files
+.env # Environment variables
+
+# Logs and temp files
+*.log
+*.tmp
+tmp/
+temp/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+Thumbs.db
+
+# Optional: If you plan on having a build folder for distribution
+dist/
+build/
+
+# PHP specific, if you are keeping those files
+# php/
