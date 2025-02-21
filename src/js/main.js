@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    // Function to handle header scroll changes
+
     $('.fa-bars').click(function () {
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
@@ -16,6 +18,10 @@ $(document).ready(function () {
             $('.header').css({ 'background': 'none', 'box-shadow': 'none' });
         }
     });
+
+
+
+    // For company stat counters
 
     const counters = document.querySelectorAll('.counter');
     const speed = 120;
@@ -34,24 +40,9 @@ $(document).ready(function () {
         updateCount();
     });
 
-    (function ($) {
-        "use strict";
 
-        $(".clients-carousel").owlCarousel({
-            autoplay: true,
-            dots: true,
-            loop: true,
-            responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 } }
-        });
 
-        $(".testimonials-carousel").owlCarousel({
-            autoplay: true,
-            dots: true,
-            loop: true,
-            responsive: { 0: { items: 1 }, 576: { items: 2 }, 768: { items: 3 }, 992: { items: 4 } }
-        });
-
-    })(jQuery);
+    // Go back on top of the page
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -71,5 +62,6 @@ $(document).ready(function () {
         $('.accordion .accordion-header span').text('+');
         $(this).children('span').text('-');
     });
+
 
 });

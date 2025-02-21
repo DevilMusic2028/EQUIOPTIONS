@@ -6,10 +6,16 @@
   "directories": {
     "lib": "lib"
   },
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "build": "npm run clean && npm run copy:assets && npm run js:build && npm run html:copy && npm run css:build",
+    "clean": "rm -rf dist",
+    "copy:assets": "mkdir -p dist/ && cp -r lib/ dist/lib/ && cp -r src/images/ dist/images/",
+    "css:build": "npx @tailwindcss/cli -i ./src/css/input.css -o dist/css/output.css",
+    "js:build": "mkdir -p dist/ && cp -r src/js dist/js",
+    "html:copy": "cp src/index.html dist/index.html"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MaadhyamRana/EQUIOPTIONS.git"
@@ -22,8 +28,6 @@
   },
   "homepage": "https://github.com/MaadhyamRana/EQUIOPTIONS#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.5.3",
     "tailwindcss": "^4.0.7"
   },
   "dependencies": {
