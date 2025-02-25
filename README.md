@@ -5,18 +5,15 @@
 # Todo:
 
 Overall:
-- Language changes, updates from DeepSeek
-- Backgrounds and colors
+- Favicon, Header logo ?
+- Content updates ?
+- Backgrounds ?
+
 - Perfectionist details
 - Remove redundancy, cleanup
 - make fallbacks for all possible
 - separate this readme from the todo
-
-Hero/Header section:
-- Header Equioptions -> EQ
-- Tagline in two lines
-- Investors/Listings page on two endpoints
-- Place these endpoints visibly on hero section
+- MOVE to REACT as platform/listings pages come in.
 
 About section:
 - Left justified w/ diagram-image

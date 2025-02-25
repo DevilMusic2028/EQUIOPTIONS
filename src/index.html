@@ -15,48 +15,80 @@
 
 
     <!-- STYLESHEETS & FAILSAFES -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="lib/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="./output.css">
-
-
-    <!-- SCRIPTS -->
-    <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-        (function () {
-            emailjs.init("VPxgz4frBNx7QmDlB"); // Add your EmailJS public key here
-        })();
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+        onerror="this.onerror=null; this.href='./lib/ionicons/css/ionicons.min.css'">
 </head>
 
 
 <body>
 
     <!-- HEADER SECTION -->
+    <header class="header fixed top-0 left-0 w-full flex items-center justify-between px-[2rem] py-[1.5rem] z-100">
+        <h2 id="nav-title" class="nav-title text-white text-[1.6rem] transition-all duration-300 ease-in-out">EQUIOPTIONS</h2>
 
-    <header class="header">
-        <h2 class="nav-title">EQUIOPTIONS</h2>
-        <div class="fas fa-bars"></div>
+        <!-- EQ Logo (Initially Hidden) -->
+        <img id="nav-logo" src="images/favicon.png" alt="EQ Logo" class="h-10 opacity-0 scale-50 transition-all duration-300 ease-in-out">
+
+        <div class="fas fa-bars text-white text-[1.6rem] cursor-pointer hidden lg:block"></div>
         <nav class="navbar">
-            <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#service">services</a></li>
-                <li><a href="#contact">contact</a></li>
-                <li><a href="#faq">FAQ</a></li>
+            <ul class="flex items-center space-x-12">
+
+                <li><a href="#home" class="capitalize text-white text-[1.6rem] relative
+                    after:block after:content-[''] after:h-px after:w-0 after:bg-white after:transition-all
+                    after:duration-100 after:ease-in-out hover:after:w-full">
+                    home</a>
+                </li>
+
+                <li><a href="#about" class="capitalize text-white text-[1.6rem] relative
+                    after:block after:content-[''] after:h-px after:w-0 after:bg-white after:transition-all
+                    after:duration-100 after:ease-in-out hover:after:w-full">about</a>
+                </li>
+
+                <li><a href="#service" class="capitalize text-white text-[1.6rem] relative
+                    after:block after:content-[''] after:h-px after:w-0 after:bg-white after:transition-all
+                    after:duration-100 after:ease-in-out hover:after:w-full">services</a>
+                </li>
+                
+                <li><a href="#contact" class="capitalize text-white text-[1.6rem] relative
+                    after:block after:content-[''] after:h-px after:w-0 after:bg-white after:transition-all
+                    after:duration-100 after:ease-in-out hover:after:w-full">contact</a>
+                </li>
+                
+                <li><a href="#faq" class="capitalize text-white text-[1.6rem] relative
+                    after:block after:content-[''] after:h-px after:w-0 after:bg-white after:transition-all
+                    after:duration-100 after:ease-in-out hover:after:w-full">FAQ</a>
+                </li>
+
             </ul>
         </nav>
     </header>
 
 
     <!-- HERO SECTION -->
-    <section id="home" class="home">
-        <h2>Simplifing Investments, Empowering Communities.</h2>
-        <div class="wave wave1"></div>
-        <div class="wave wave2"></div>
-        <div class="wave wave3"></div>
+    <section id="home" 
+        class="home min-h-screen w-screen bg-[#002e5f] flex flex-col
+               items-left justify-center text-left
+               px-20 relative overflow-hidden">
+        <h2 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-snug text-white">
+            <span class="block text-white">Simplifying Investments,</span>
+            <span class="text-white">Empowering Communities</span>
+        </h2>
+        
+        <div class="flex flex-col md:flex-row gap-8 mt-10">
+            <a href="/listings"
+                class="bg-[#ffffff] text-[#002e5f] text-2xl px-6 py-4
+                       rounded-lg shadow-md hover:bg-[#dfdfdf] transition duration-300">Browse Listings
+                <i class="ion-android-open ml-2"></i>
+            </a>
+            
+            <a href="/investors"
+            class="bg-transparent border-2 border-[#ffffff] text-[#ffffff] text-2xl px-6 py-4
+            rounded-lg shadow-md hover:bg-[#ffffff] hover:text-[#002e5f] transition duration-300">Become an Investor
+                <i class="ion-android-open ml-2"></i>
+            </a>
+        </div>
     </section>
 
 
@@ -75,6 +107,10 @@
                 <!-- <a href="index.html"><button class="btn">Read More</button></a> -->
             </div>
         </div>
+    </section>
+
+    <!-- ADVISORY BOARD SECTION -->
+    <section>
     </section>
 
 
@@ -116,8 +152,6 @@
         </div>
     </div>
 
-
-
     <!-- STATS SECTION -->
     <section class="counters">
         <div class="container">
@@ -142,37 +176,33 @@
 
 
 
-    <!-- Advisory Board -->
-    <section>
-    </section>
 
-
-
-    <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
-
-
-
+    <!-- CONTACT SECTION -->
     <section id="contact" class="contact">
         <h1 class="heading">get in touch</h1>
+        <div class="contact-in">
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711243.17762776!2d64.4398422293091!3d20.011408266548177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1644684739958!5m2!1sen!2sin"
+                    width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Name" class="contact-form-txt" required>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Contact number"
+                        maxlength="10" class="contact-form-phone">
+                    <input type="email" name="email" placeholder="Email" class="contact-form-email" required>
+                    <textarea placeholder="Your Message" name="message" class="contact-form-txtarea"
+                        required></textarea>
+                    <input type="submit" value="Submit" class="contact-form-btn">
+                </form>
+            </div>
+        </div>
     </section>
-    <div class="contact-in">
-        <div class="contact-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711243.17762776!2d64.4398422293091!3d20.011408266548177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1644684739958!5m2!1sen!2sin"
-                width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="contact-form">
-            <form id="contactForm">
-                <input type="text" name="name" placeholder="Name" class="contact-form-txt" required>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Contact number"
-                    maxlength="10" class="contact-form-phone">
-                <input type="email" name="email" placeholder="Email" class="contact-form-email" required>
-                <textarea placeholder="Your Message" name="message" class="contact-form-txtarea" required></textarea>
-                <input type="submit" value="Submit" class="contact-form-btn">
-            </form>
-        </div>
-    </div>
 
+
+
+    <!-- FAQ SECTION -->
     <!-- <section class="faq">
       <h1 class="heading" style="margin-top: -2rem; color: #00bfff;" id="faq">FAQ</h1>
       <div class="row">
@@ -208,6 +238,9 @@
       </div>
   </section> -->
 
+
+
+    <!-- FOOTER -->
     <div class="footer">
         <div class="footer-top">
             <div class="container">
@@ -272,7 +305,22 @@
         </div>
     </div>
 
-    <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
-</body>
 
+
+    <!-- GO BACK ON TOP BUTTON -->
+    <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("VPxgz4frBNx7QmDlB"); // Add your EmailJS public key here
+        })();
+        </script>
+    <script src="./js/main.js"></script>
+
+</body>
 </html>
