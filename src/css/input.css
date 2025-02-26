@@ -78,67 +78,8 @@ body {
 
 
 
-.heading,
-.clients .section-header h2,
-.section-head h1,
-.testimonials .section-header h2,
-.section-head-1 h4 {
-    margin: 2rem;
-    padding-top: 6rem;
-    display: inline-block;
-    font-size: 3.5rem;
-    color: #002e5f;
-    position: relative;
-    letter-spacing: .2rem;
-}
-
-.heading::before,
-.heading::after,
-.clients .section-header h2::before,
-.clients .section-header h2::after,
-.section-head h1::before,
-.section-head h1::after,
-.testimonials .section-header h2::before,
-.testimonials .section-header h2::after,
-.section-head-1 h4::before,
-.section-head-1 h4::after {
-    content: '';
-    position: absolute;
-    height: 2.5rem;
-    width: 2.5rem;
-    border-top: .4rem solid #002e5f;
-    border-left: .4rem solid #002e5f;
-}
-
-.faq .heading::before,
-.faq .heading::after {
-    border-top: .4rem solid #00bfff;
-    border-left: .4rem solid #00bfff;
-}
-
-.heading::before,
-.clients .section-header h2::before,
-.section-head h1::before,
-.testimonials .section-header h2::before,
-.section-head-1 h4::before {
-    top: 5.8rem;
-    left: -2rem;
-}
-
-.heading::after,
-.clients .section-header h2::after,
-.section-head h1::after,
-.testimonials .section-header h2::after,
-.section-head-1 h4::after {
-    bottom: -.5rem;
-    right: -2rem;
-    transform: rotate(180deg);
-}
-
-
-
 /* HEADER SECTION */
-.header .fa-bars{
+.header .three-bars{
     color: #fff;
     cursor: pointer;
     font-size: 3rem;
@@ -229,13 +170,13 @@ body {
         font-size: 50%;
     }
 
-    .header .fa-bars {
+    .header .three-bars {
         display: block;
         color: white;
         margin-right: 1rem;
     }
 
-    .header .fa-bars:hover {
+    .header .three-bars:hover {
         color: #00bfff;
     }
 
@@ -318,29 +259,6 @@ body {
         color: #333;
         padding: 1rem 0;
         text-transform: none;
-    }
-
-    .clients {
-        position: relative;
-        padding: 90px 0;
-        text-align: center;
-        margin-top: -15rem;
-        margin-bottom: -8rem;
-    }
-
-    .clients .section-header p {
-        padding-bottom: 10px;
-        margin-top: 2.5rem;
-        text-align: center;
-        font-size: 2rem;
-    }
-
-    .team {
-        min-height: auto;
-    }
-
-    .team .row {
-        flex-direction: column;
     }
 
     .contact {

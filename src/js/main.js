@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // To handle top-right dropdown menu for narrow screens
-    $('.fa-bars').click(function () {
+    $('.three-bars').click(function () {
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
     });

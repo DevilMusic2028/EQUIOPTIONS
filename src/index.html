@@ -16,9 +16,6 @@
 
     <!-- STYLESHEETS & FAILSAFES -->
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
-        onerror="this.onerror=null; this.href='./lib/ionicons/css/ionicons.min.css'">
 </head>
 
 
@@ -33,7 +30,7 @@
         <img id="nav-logo" src="images/favicon.png" alt="EQ Logo"
             class="h-10 opacity-0 scale-50 transition-all duration-300 ease-in-out">
 
-        <div class="fas fa-bars text-white text-[1.6rem] cursor-pointer hidden lg:block"></div>
+        <ion-icon name="reorder-three-outline" class="three-bars"></ion-icon>
         <nav class="navbar">
             <ul class="flex items-center space-x-12">
 
@@ -70,7 +67,7 @@
 
 
     <!-- HERO SECTION -->
-    <section id="home" class="home min-h-screen w-screen bg-[#002e5f] flex flex-col
+    <section id="home" class="home min-h-screen w-screen bg-[url(../images/subtle-prism.svg)] flex flex-col
                items-left justify-center text-left
                px-20 relative overflow-hidden">
 
@@ -82,12 +79,12 @@
         <div class="flex flex-col md:flex-row gap-8 mt-10">
             <a href="/listings" class="bg-[#ffffff] text-[#002e5f] text-2xl px-6 py-4
                        rounded-lg shadow-md hover:bg-[#dfdfdf] transition duration-300">Browse Listings
-                <i class="ion-android-open ml-2"></i>
+                <ion-icon name="open-outline" class="text-3xl ml-2 mb-[-2px]"></ion-icon>
             </a>
-
+            
             <a href="/investors" class="bg-transparent border-2 border-[#ffffff] text-[#ffffff] text-2xl px-6 py-4
             rounded-lg shadow-md hover:bg-[#ffffff] hover:text-[#002e5f] transition duration-300">Become an Investor
-                <i class="ion-android-open ml-2"></i>
+                <ion-icon name="open-outline" class="text-3xl ml-2 mb-[-2px]"></ion-icon>
             </a>
         </div>
 
@@ -99,11 +96,11 @@
     <section id="about" class="relative w-screen overflow-hidden">
 
         <!-- about content -->
-        <div class="flex flex-col items-center pt-20 pb-10 px-75">
+        <div class="flex flex-col items-center pt-30 pb-10 px-75">
 
             <h1 class="text-[#002e5f] text-5xl mb-12 border-eq">About Us</h1>
 
-            <div class="text-gray-700 text-[1.75rem] leading-relaxed text-justify">
+            <div class="text-gray-700 text-[1.6rem] leading-relaxed text-justify">
                 <p>
                     EquiOptions was founded with a clear vision: to create a marketplace that empowers both investors
                     and entrepreneurs. By blending the strategic precision of options trading with the growth potential
@@ -130,41 +127,47 @@
 
 
     <!-- SERVICES SECTION -->
-    <section id="services" class="bg-gray-100 py-16">
+    <section id="services" class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
 
-        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-[#002e5f] text-5xl mb-6 border-eq">Our Services</h1>
 
-            <h1 class="text-[#002e5f] text-5xl border-eq mb-12">Our Services</h1>
+            <div class="grid md:grid-cols-2 gap-4">
 
-            <div class="grid grid-cols-2 gap-18">
-
-                <!-- Investor Section -->
-                <div class="relative p-15 bg-white shadow-lg rounded-lg border-custom">
-                    <h2 class="text-3xl font-semibold text-[#002e5f] mb-4">For Investors</h2>
-                    <i class="ion-ios-arrow-forward"></i>
-                    <ul class="text-gray-600 space-y-2 text-xl">
-                        <li>Sign up and create your investor profile.</li>
-                        <li>Explore a curated selection of private companies seeking funding.</li>
-                        <li>Use options trading strategies to manage risk and maximize returns.</li>
-                        <li>Monitor your portfolio with real-time insights and updates.</li>
+                <!-- Investor Card -->
+                <div class="relative p-16">
+                    
+                    <h2 class="text-3xl text-[#002e5f] flex items-center mb-10">
+                        <ion-icon name="trending-up-outline" class="block text-[#002e5f] text-4xl mr-4"></ion-icon>
+                        For Investors
+                    </h2>
+                    
+                    <ul class="list-disc pl-6 text-left text-gray-700 space-y-10 text-xl">
+                        <li>Sign up and create your investor profile</li>
+                        <li>Explore a curated selection of private companies seeking funding</li>
+                        <li>Use options trading strategies to manage risk and maximize returns</li>
+                        <li>Monitor your portfolio with real-time insights and updates</li>
                     </ul>
                 </div>
 
-                <!-- Business Section -->
-                <div class="relative p-15 bg-white shadow-lg rounded-lg border-custom">
-                    <h2 class="text-3xl font-semibold text-[#002e5f] mb-4">For Private Businesses</h2>
-                    <i class="ion-ios-arrow-forward"></i>
-                    <ul class="text-gray-600 space-y-2 text-xl">
-                        <li>Register your business and outline your funding requirements.</li>
-                        <li>Showcase your potential with detailed business profiles.</li>
-                        <li>Connect with investors who align with your vision.</li>
-                        <li>Access flexible funding solutions tailored to your growth.</li>
+                <!-- Business Card -->
+                <div class="relative p-16">
+
+                    <h2 class="text-3xl text-[#002e5f] flex items-center mb-10">
+                        <ion-icon name="briefcase-outline" class="block text-[#002e5f] text-3xl mr-4"></ion-icon>
+                        For Businesses
+                    </h2>
+                    
+                    <ul class="list-disc pl-6 text-left text-gray-700 space-y-8 text-xl">
+                        <li>Register your business and outline your funding requirements</li>
+                        <li>Showcase your potential with detailed business profiles</li>
+                        <li>Connect with investors who align with your vision</li>
+                        <li>Access flexible funding solutions tailored to your growth</li>
                     </ul>
                 </div>
 
             </div>
         </div>
-
     </section>
 
 
@@ -175,23 +178,23 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 text-center">
                 <!-- Counter Item 1 -->
                 <div>
-                    <i class="far fa-clock text-5xl"></i>
-                    <div class="counter text-4xl font-bold mt-2" data-target="">0</div>
-                    <h3 class="text-lg font-medium">Working Hours</h3>
+                    <ion-icon name="time-outline" class="text-5xl"></ion-icon>
+                    <div class="counter text-4xl font-bold mt-3" data-target="">0</div>
+                    <h3 class="text-xl font-medium mt-1">Working Hours</h3>
                 </div>
-
-                <!-- Counter Item 2 -->
+                    
+                    <!-- Counter Item 2 -->
                 <div>
-                    <i class="fas fa-users text-5xl"></i>
-                    <div class="counter text-4xl font-bold mt-2" data-target="">0</div>
-                    <h3 class="text-lg font-medium">Happy Clients</h3>
+                    <ion-icon name="people-outline" class="text-5xl"></ion-icon>
+                    <div class="counter text-4xl font-bold mt-3" data-target="">0</div>
+                    <h3 class="text-xl font-medium mt-1">Happy Clients</h3>
                 </div>
-
+                
                 <!-- Counter Item 3 -->
                 <div>
-                    <i class="fas fa-award text-5xl"></i>
-                    <div class="counter text-4xl font-bold mt-2" data-target="">0</div>
-                    <h3 class="text-lg font-medium">Awards Received</h3>
+                    <ion-icon name="trophy-outline" class="text-5xl"></ion-icon>
+                    <div class="counter text-4xl font-bold mt-3" data-target="">0</div>
+                    <h3 class="text-xl font-medium mt-1">Awards Received</h3>
                 </div>
             </div>
         </div>
@@ -271,39 +274,39 @@
     <!-- FOOTER -->
     <footer class="bg-gray-800">
 
-        <div class="bg-[#002e5f] py-10">
+        <div class="bg-[#002e5f] py-20">
 
-            <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 gap-8 text-white">
-                
+            <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 gap-12 text-white">
+
                 <!-- Useful Links -->
                 <div>
                     <h4 class="text-xl uppercase pb-3 border-b-2 border-white tracking-wide">
                         Useful Links
                     </h4>
                     <ul class="mt-4 space-y-2 text-lg">
-                        <li class="border-b border-white pb-2">
-                            <i class="ion-ios-arrow-forward pr-1"></i>
+                        <li class="border-b border-white pb-2 items">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
                             <a href="#home" class="hover:underline">Home</a>
                         </li>
                         <li class="border-b border-white pb-2">
-                            <i class="ion-ios-arrow-forward pr-1"></i>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
                             <a href="#about" class="hover:underline">About</a>
                         </li>
                         <li class="border-b border-white pb-2">
-                            <i class="ion-ios-arrow-forward pr-1"></i>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
                             <a href="#services" class="hover:underline">Services</a>
                         </li>
                         <li class="border-b border-white pb-2">
-                            <i class="ion-ios-arrow-forward pr-1"></i>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
                             <a href="#contact" class="hover:underline">Contact</a>
                         </li>
                         <li class="border-b border-white pb-2">
-                            <i class="ion-ios-arrow-forward pr-1"></i>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
                             <a href="#faq" class="hover:underline">FAQ</a>
                         </li>
                     </ul>
                 </div>
-    
+
                 <!-- Contact Us -->
                 <div>
                     <h4 class="text-xl uppercase pb-3 border-b-2 border-white tracking-wide">
@@ -315,7 +318,7 @@
                         <strong>Email:</strong> equioptions@gmail.com
                     </p>
                 </div>
-        
+
                 <!-- Social media links -->
                 <!-- <div class="social-links">
                     <a href="https://www.facebook.com/"><i class="ion-logo-facebook"></i></a>
@@ -324,10 +327,10 @@
                     <a href="https://www.instagram.com/"><i class="ion-logo-instagram"></i></a>
                     <a href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="ion-logo-googleplus"></i></a>
                 </div> -->
-        
+
             </div>
         </div>
-    
+
         <!-- Copyright Section -->
         <div class="text-white text-center md:text-left text-lg py-7">
             <div class="max-w-6xl mx-auto px-4">
@@ -340,21 +343,29 @@
 
 
     <!-- GO BACK ON TOP BUTTON -->
-    <a href="#" 
-    class="back-to-top fixed hidden bg-sky-500 text-white w-12 h-12 flex items-center justify-center text-5xl 
+    <a href="#" class="back-to-top fixed hidden bg-sky-500 text-white w-12 h-12 flex items-center justify-center text-5xl 
            right-4 bottom-4 shadow-lg transition hover:bg-sky-400">
-     <i class="ion-ios-arrow-up pl-2"></i>
+        <ion-icon name="chevron-up-outline"></ion-icon>
     </a>
 
 
     <!-- SCRIPTS -->
+
+    <!-- Ionicons -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    
+    <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- EmailJS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
         (function () {
             emailjs.init("VPxgz4frBNx7QmDlB"); // Add your EmailJS public key here
         })();
     </script>
+
     <script src="./js/main.js"></script>
 
 </body>
