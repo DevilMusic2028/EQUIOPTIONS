@@ -26,10 +26,12 @@
 
     <!-- HEADER SECTION -->
     <header class="header fixed top-0 left-0 w-full flex items-center justify-between px-[2rem] py-[1.5rem] z-100">
-        <h2 id="nav-title" class="nav-title text-white text-[1.6rem] transition-all duration-300 ease-in-out">EQUIOPTIONS</h2>
+        <h2 id="nav-title" class="nav-title text-white text-[1.6rem] transition-all duration-300 ease-in-out">
+            EQUIOPTIONS</h2>
 
         <!-- EQ Logo (Initially Hidden) -->
-        <img id="nav-logo" src="images/favicon.png" alt="EQ Logo" class="h-10 opacity-0 scale-50 transition-all duration-300 ease-in-out">
+        <img id="nav-logo" src="images/favicon.png" alt="EQ Logo"
+            class="h-10 opacity-0 scale-50 transition-all duration-300 ease-in-out">
 
         <div class="fas fa-bars text-white text-[1.6rem] cursor-pointer hidden lg:block"></div>
         <nav class="navbar">
@@ -38,7 +40,7 @@
                 <li><a href="#home" class="capitalize text-white text-[1.6rem] relative
                     after:block after:content-[''] after:h-px after:w-0 after:bg-white after:transition-all
                     after:duration-100 after:ease-in-out hover:after:w-full">
-                    home</a>
+                        home</a>
                 </li>
 
                 <li><a href="#about" class="capitalize text-white text-[1.6rem] relative
@@ -46,16 +48,16 @@
                     after:duration-100 after:ease-in-out hover:after:w-full">about</a>
                 </li>
 
-                <li><a href="#service" class="capitalize text-white text-[1.6rem] relative
+                <li><a href="#services" class="capitalize text-white text-[1.6rem] relative
                     after:block after:content-[''] after:h-px after:w-0 after:bg-white after:transition-all
                     after:duration-100 after:ease-in-out hover:after:w-full">services</a>
                 </li>
-                
+
                 <li><a href="#contact" class="capitalize text-white text-[1.6rem] relative
                     after:block after:content-[''] after:h-px after:w-0 after:bg-white after:transition-all
                     after:duration-100 after:ease-in-out hover:after:w-full">contact</a>
                 </li>
-                
+
                 <li><a href="#faq" class="capitalize text-white text-[1.6rem] relative
                     after:block after:content-[''] after:h-px after:w-0 after:bg-white after:transition-all
                     after:duration-100 after:ease-in-out hover:after:w-full">FAQ</a>
@@ -66,138 +68,164 @@
     </header>
 
 
+
     <!-- HERO SECTION -->
-    <section id="home" 
-        class="home min-h-screen w-screen bg-[#002e5f] flex flex-col
+    <section id="home" class="home min-h-screen w-screen bg-[#002e5f] flex flex-col
                items-left justify-center text-left
                px-20 relative overflow-hidden">
+
         <h2 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-snug text-white">
             <span class="block text-white">Simplifying Investments,</span>
             <span class="text-white">Empowering Communities</span>
         </h2>
-        
+
         <div class="flex flex-col md:flex-row gap-8 mt-10">
-            <a href="/listings"
-                class="bg-[#ffffff] text-[#002e5f] text-2xl px-6 py-4
+            <a href="/listings" class="bg-[#ffffff] text-[#002e5f] text-2xl px-6 py-4
                        rounded-lg shadow-md hover:bg-[#dfdfdf] transition duration-300">Browse Listings
                 <i class="ion-android-open ml-2"></i>
             </a>
-            
-            <a href="/investors"
-            class="bg-transparent border-2 border-[#ffffff] text-[#ffffff] text-2xl px-6 py-4
+
+            <a href="/investors" class="bg-transparent border-2 border-[#ffffff] text-[#ffffff] text-2xl px-6 py-4
             rounded-lg shadow-md hover:bg-[#ffffff] hover:text-[#002e5f] transition duration-300">Become an Investor
                 <i class="ion-android-open ml-2"></i>
             </a>
         </div>
+
     </section>
 
 
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="about">
-        <h1 class="heading">ABOUT US</h1>
-        <div class="row">
-            <div class="content">
-                <!-- <h3>We make your safety our first priority</h3> -->
-                <p>EquiOptions was founded with a singular vision: to create a marketplace that empowers investors and
-                    entrepreneurs alike. By combining the precision and strategy of options trading with the growth
-                    potential of private businesses, we unlock opportunities that were previously out of reach. Our team
-                    comprises financial experts, technologists, and visionaries who are passionate about making a
-                    positive impact in the investment ecosystem. </p>
+    <section id="about" class="relative w-screen overflow-hidden">
+
+        <!-- about content -->
+        <div class="flex flex-col items-center pt-20 pb-10 px-75">
+
+            <h1 class="text-[#002e5f] text-5xl mb-12 border-eq">About Us</h1>
+
+            <div class="text-gray-700 text-[1.75rem] leading-relaxed text-justify">
+                <p>
+                    EquiOptions was founded with a clear vision: to create a marketplace that empowers both investors
+                    and entrepreneurs. By blending the strategic precision of options trading with the growth potential
+                    of private businesses, we open doors to opportunities that were once out of reach. Our team of
+                    financial experts, technologists, and visionaries is dedicated to transforming the investment
+                    landscape and making a lasting impact.
+                </p>
                 <!-- <a href="index.html"><button class="btn">Read More</button></a> -->
             </div>
-        </div>
-    </section>
 
-    <!-- ADVISORY BOARD SECTION -->
-    <section>
+        </div>
+
+        <!-- advisory board content -->
+        <div class="advisory-board flex flex-col items-center pt-20 pb-10 px-75">
+
+            <h1 class="text-[#002e5f] text-5xl mb-12 border-eq">Advisory Board</h1>
+
+            <div></div>
+
+        </div>
+
     </section>
 
 
 
     <!-- SERVICES SECTION -->
-    <div class="pt-5 pb-5" style="background-color: #f2f2f2;">
-        <div class="container">
-            <div class="row">
-                <div class="section-head col-sm-12" id="service">
-                    <h1>Our Services</h1>
-                    <p>This are the platforms that are product is availabe in </p>
+    <section id="services" class="bg-gray-100 py-16">
+
+        <div class="max-w-6xl mx-auto text-center">
+
+            <h1 class="text-[#002e5f] text-5xl border-eq mb-12">Our Services</h1>
+
+            <div class="grid grid-cols-2 gap-18">
+
+                <!-- Investor Section -->
+                <div class="relative p-15 bg-white shadow-lg rounded-lg border-custom">
+                    <h2 class="text-3xl font-semibold text-[#002e5f] mb-4">For Investors</h2>
+                    <i class="ion-ios-arrow-forward"></i>
+                    <ul class="text-gray-600 space-y-2 text-xl">
+                        <li>Sign up and create your investor profile.</li>
+                        <li>Explore a curated selection of private companies seeking funding.</li>
+                        <li>Use options trading strategies to manage risk and maximize returns.</li>
+                        <li>Monitor your portfolio with real-time insights and updates.</li>
+                    </ul>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-laptop"></i></span>
-                        <h6>For investors</h6>
-                        <p>Sign up and create your investor profile.</p>
 
-                        <p>Browse a curated list of private companies seeking funding.
-
-                        <p>Use options trading strategies to hedge risk or maximize returns.</p>
-
-                        <p>Monitor your investments with real-time insights and updates.</p>
-                    </div>
+                <!-- Business Section -->
+                <div class="relative p-15 bg-white shadow-lg rounded-lg border-custom">
+                    <h2 class="text-3xl font-semibold text-[#002e5f] mb-4">For Private Businesses</h2>
+                    <i class="ion-ios-arrow-forward"></i>
+                    <ul class="text-gray-600 space-y-2 text-xl">
+                        <li>Register your business and outline your funding requirements.</li>
+                        <li>Showcase your potential with detailed business profiles.</li>
+                        <li>Connect with investors who align with your vision.</li>
+                        <li>Access flexible funding solutions tailored to your growth.</li>
+                    </ul>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-android"></i></span>
-                        <h6>For Private Bussinesses:</h6>
-                        <p>Register your business and share your funding needs.
 
-                            Showcase your growth potential through comprehensive profiles.
-
-                            Connect with a diverse pool of investors who believe in your vision.
-
-                            Access flexible funding options tailored to your requirements.
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
+
+    </section>
+
+
 
     <!-- STATS SECTION -->
-    <section class="counters">
-        <div class="container">
-            <div>
-                <i class="far fa-clock fa-4x"></i>
-                <div class="counter" data-target="">0</div>
-                <h3>Working Hours</h3>
-            </div>
+    <section class="relative bg-[#002e5f] bg-cover bg-fixed bg-center text-white py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 text-center">
+                <!-- Counter Item 1 -->
+                <div>
+                    <i class="far fa-clock text-5xl"></i>
+                    <div class="counter text-4xl font-bold mt-2" data-target="">0</div>
+                    <h3 class="text-lg font-medium">Working Hours</h3>
+                </div>
 
-            <div>
-                <i class="fas fa-users fa-4x"></i>
-                <div class="counter" data-target="">0</div>
-                <h3>Happy Clients</h3>
-            </div>
-            <div>
-                <i class="fas fa-award fa-4x"></i>
-                <div class="counter" data-target="">0</div>
-                <h3>Awards Received</h3>
+                <!-- Counter Item 2 -->
+                <div>
+                    <i class="fas fa-users text-5xl"></i>
+                    <div class="counter text-4xl font-bold mt-2" data-target="">0</div>
+                    <h3 class="text-lg font-medium">Happy Clients</h3>
+                </div>
+
+                <!-- Counter Item 3 -->
+                <div>
+                    <i class="fas fa-award text-5xl"></i>
+                    <div class="counter text-4xl font-bold mt-2" data-target="">0</div>
+                    <h3 class="text-lg font-medium">Awards Received</h3>
+                </div>
             </div>
         </div>
     </section>
 
 
 
-
     <!-- CONTACT SECTION -->
-    <section id="contact" class="contact">
-        <h1 class="heading">get in touch</h1>
-        <div class="contact-in">
-            <div class="contact-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711243.17762776!2d64.4398422293091!3d20.011408266548177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1644684739958!5m2!1sen!2sin"
-                    width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="contact-form">
-                <form id="contactForm">
-                    <input type="text" name="name" placeholder="Name" class="contact-form-txt" required>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Contact number"
-                        maxlength="10" class="contact-form-phone">
-                    <input type="email" name="email" placeholder="Email" class="contact-form-email" required>
-                    <textarea placeholder="Your Message" name="message" class="contact-form-txtarea"
-                        required></textarea>
-                    <input type="submit" value="Submit" class="contact-form-btn">
-                </form>
-            </div>
+    <section id="contact" class="text-center py-16 bg-gray-100">
+
+        <h1 class="text-[#002e5f] text-5xl border-eq mb-12">Get in touch</h1>
+
+        <div class="max-w-5xl mx-auto bg-white p-8 rounded-lg shadow-md">
+            <form id="contactForm" class="space-y-5">
+                <input type="text" name="name" placeholder="Name" required
+                    class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#003e7d]">
+
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Contact Number"
+                    maxlength="10"
+                    class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#003e7d]">
+
+                <input type="email" name="email" placeholder="Email" required
+                    class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#003e7d]">
+
+                <textarea name="message" placeholder="Your Message" required
+                    class="w-full p-4 border border-gray-300 rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-[#003e7d]"></textarea>
+
+                <button type="submit"
+                    class="w-full py-4 bg-[#003e7d] text-white text-xl font-medium rounded-full hover:bg-[#002e5f] transition">
+                    Submit
+                </button>
+            </form>
         </div>
+
     </section>
 
 
@@ -241,75 +269,82 @@
 
 
     <!-- FOOTER -->
-    <div class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <!-- <h4>About Us</h4>
-                      <ul>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#">Home</a></li>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#about">About us</a></li>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#service">Our services</a></li>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#">Terms & condition</a></li>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#">Privacy policy</a></li>
-                      </ul> -->
-                    </div>
+    <footer class="bg-gray-800">
 
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#portfolio">Portfolio</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#team">Team</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#contact">Contact</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#faq">FAQ</a></li>
-                        </ul>
-                    </div>
+        <div class="bg-[#002e5f] py-10">
 
-                    <div class="col-lg-3 col-md-6 footer-contact" style="font-size: 1.5rem;">
-                        <h4>Contact Us</h4>
-                        <p>
-                            1349 western road N6G 1H3, London Ontario<br>
-                            <strong>Phone:</strong><br>
-                            <strong>Email:</strong> equioptions@gmail.com<br>
-                        </p>
-
-                        <!-- <div class="social-links">
-                          <a href="https://www.facebook.com/"><i class="ion-logo-facebook"></i></a>
-                          <a href="https://twitter.com/login?lang=en"><i class="ion-logo-twitter"></i></a>
-                          <a href="https://www.linkedin.com/"><i class="ion-logo-linkedin"></i></a>
-                          <a href="https://www.instagram.com/"><i class="ion-logo-instagram"></i></a>
-                          <a href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="ion-logo-googleplus"></i></a>
-                      </div> -->
-
-                    </div>
-
-                    <!-- <div class="col-lg-3 col-md-6 footer-newsletter">
-                      <h4>Subscription</h4>
-                      <p>last description</p>
-                      <form action="" method="post">
-                          <input type="email" name="email"><input type="submit"  value="Subscribe">
-                      </form>
-                  </div> -->
-
+            <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 gap-8 text-white">
+                
+                <!-- Useful Links -->
+                <div>
+                    <h4 class="text-xl uppercase pb-3 border-b-2 border-white tracking-wide">
+                        Useful Links
+                    </h4>
+                    <ul class="mt-4 space-y-2 text-lg">
+                        <li class="border-b border-white pb-2">
+                            <i class="ion-ios-arrow-forward pr-1"></i>
+                            <a href="#home" class="hover:underline">Home</a>
+                        </li>
+                        <li class="border-b border-white pb-2">
+                            <i class="ion-ios-arrow-forward pr-1"></i>
+                            <a href="#about" class="hover:underline">About</a>
+                        </li>
+                        <li class="border-b border-white pb-2">
+                            <i class="ion-ios-arrow-forward pr-1"></i>
+                            <a href="#services" class="hover:underline">Services</a>
+                        </li>
+                        <li class="border-b border-white pb-2">
+                            <i class="ion-ios-arrow-forward pr-1"></i>
+                            <a href="#contact" class="hover:underline">Contact</a>
+                        </li>
+                        <li class="border-b border-white pb-2">
+                            <i class="ion-ios-arrow-forward pr-1"></i>
+                            <a href="#faq" class="hover:underline">FAQ</a>
+                        </li>
+                    </ul>
                 </div>
+    
+                <!-- Contact Us -->
+                <div>
+                    <h4 class="text-xl uppercase pb-3 border-b-2 border-white tracking-wide">
+                        Contact Us
+                    </h4>
+                    <p class="mt-4 leading-7 text-lg">
+                        1349 Western Road N6G 1H3, London Ontario<br>
+                        <strong>Phone:</strong> <br>
+                        <strong>Email:</strong> equioptions@gmail.com
+                    </p>
+                </div>
+        
+                <!-- Social media links -->
+                <!-- <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="ion-logo-facebook"></i></a>
+                    <a href="https://twitter.com/login?lang=en"><i class="ion-logo-twitter"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="ion-logo-linkedin"></i></a>
+                    <a href="https://www.instagram.com/"><i class="ion-logo-instagram"></i></a>
+                    <a href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="ion-logo-googleplus"></i></a>
+                </div> -->
+        
+            </div>
+        </div>
+    
+        <!-- Copyright Section -->
+        <div class="text-white text-center md:text-left text-lg py-7">
+            <div class="max-w-6xl mx-auto px-4">
+                Copyright &copy; 2025 EquiOptions. All Rights Reserved.
             </div>
         </div>
 
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 copyright" style="color: #fff; font-size: 1.3rem;">
-                    Copyright &copy; 2024 EquiOptions. All Rights Reserved.
-                </div>
-            </div>
-        </div>
-    </div>
+    </footer>
 
 
 
     <!-- GO BACK ON TOP BUTTON -->
-    <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
-
+    <a href="#" 
+    class="back-to-top fixed hidden bg-sky-500 text-white w-12 h-12 flex items-center justify-center text-5xl 
+           right-4 bottom-4 shadow-lg transition hover:bg-sky-400">
+     <i class="ion-ios-arrow-up pl-2"></i>
+    </a>
 
 
     <!-- SCRIPTS -->
@@ -319,8 +354,9 @@
         (function () {
             emailjs.init("VPxgz4frBNx7QmDlB"); // Add your EmailJS public key here
         })();
-        </script>
+    </script>
     <script src="./js/main.js"></script>
 
 </body>
+
 </html>
