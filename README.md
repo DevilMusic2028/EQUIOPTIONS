@@ -4,13 +4,5 @@
 
 # Todo:
 
-- Favicon, Header logo ?
-- Content updates ?
-- Backgrounds ?
-- Advisory board ?
-- FAQ ?
-
-
-- Perfectionist details, redundancies, cleanup
-- Manage fallbacks (jQuery, etc.)
+- Advisory board and FAQ sections
 - Move to React as listings/investors pages come in

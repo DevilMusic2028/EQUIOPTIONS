@@ -206,10 +206,6 @@ body {
         font-size: 2.4rem;
     }
 
-    .header .fa-times {
-        transform: rotate(90deg);
-    }
-
     .header .nav-toggle {
         top: 5.8rem;
     }
@@ -281,17 +277,6 @@ body {
         border-radius: 10px;
         background: #fff;
         box-shadow: 0px 0px 10px 0px #666;
-    }
-
-    .contact-map {
-        width: 100%;
-        height: auto;
-        flex: 50%;
-    }
-
-    .contact-map iframe {
-        width: 100%;
-        height: 100%;
     }
 
     .contact-form {

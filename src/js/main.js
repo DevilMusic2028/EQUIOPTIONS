@@ -40,26 +40,13 @@ $(document).ready(function () {
     });
 
 
-
-    // Go back on top of the page
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
-        return false;
-    });
-
-    $('.accordion-header').click(function () {
-        $('.accordion .accordion-body').slideUp(500);
-        $(this).next('.accordion-body').slideDown(500);
-        $('.accordion .accordion-header span').text('+');
-        $(this).children('span').text('-');
-    });
+    // Accordion menu For FAQ section
+    // $('.accordion-header').click(function () {
+    //     $('.accordion .accordion-body').slideUp(500);
+    //     $(this).next('.accordion-body').slideDown(500);
+    //     $('.accordion .accordion-header span').text('+');
+    //     $(this).children('span').text('-');
+    // });
 });
 
 
@@ -102,4 +89,29 @@ document.addEventListener("scroll", function () {
             }, 10);
         }, 300); // Wait for logo to fade out before hiding
     }
+});
+
+// Go back on top of the page
+const backToTop = document.querySelector(".back-to-top");
+
+// Function to show/hide the button based on scroll position
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        backToTop.style.display = "block"; // Show button
+        backToTop.style.opacity = "1"; // Fade in
+    } else {
+        backToTop.style.opacity = "0"; // Fade out
+        setTimeout(() => {
+            if (window.scrollY <= 100) backToTop.style.display = "none";
+        }, 300); // Delay hiding to allow fade-out effect
+    }
+});
+
+// Smooth scroll to top on button click
+backToTop.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Smooth scrolling
+    });
 });
