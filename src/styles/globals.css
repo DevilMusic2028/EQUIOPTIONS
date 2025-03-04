@@ -1,55 +1,54 @@
-@import url('https://fonts.googleapis.com/css?family=Libre Baskerville:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 @import "tailwindcss";
-
-/* Customs font for tailwind */
-@theme {
-    --font-libre-baskerville: "Libre Baskerville", serif;
-}
 
 @layer base {
     body {
-      font-family: var(--font-libre-baskerville);
+        font-family: var(--font-libre-baskerville);
     }
-  
-    h1, h2, h3, h4, h5, h6 {
-      font-family: var(--font-libre-baskerville);
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-libre-baskerville);
     }
 }
 
 /* Custom partial border for section headings */
 @layer components {
     .border-eq {
-      position: relative;
-      display: inline-block;
-      padding: 1rem 1.5rem;
+        position: relative;
+        display: inline-block;
+        padding: 1rem 1.5rem;
     }
-  
+
     .border-eq::before,
     .border-eq::after {
-      content: "";
-      position: absolute;
-      width: 15px;
-      height: 15px;
-      border: 3px solid #002e5f;
-      transition: all 0.1s ease-in-out;
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 3px solid #002e5f;
+        transition: all 0.1s ease-in-out;
     }
-  
+
     /* Top-left corner */
     .border-eq::before {
-      top: 0;
-      left: 0;
-      border-bottom: none;
-      border-right: none;
+        top: 0;
+        left: 0;
+        border-bottom: none;
+        border-right: none;
     }
-  
+
     /* Bottom-right corner */
     .border-eq::after {
-      bottom: 0;
-      right: 0;
-      border-top: none;
-      border-left: none;
+        bottom: 0;
+        right: 0;
+        border-top: none;
+        border-left: none;
     }
-        
+
     /* Hover Effect */
     .hover.border-eq:hover::before {
         width: 20px;
@@ -75,94 +74,6 @@ html {
 body {
     overflow-x: hidden;
 }
-
-
-
-/* HEADER SECTION */
-.header .three-bars{
-    color: #fff;
-    cursor: pointer;
-    font-size: 3rem;
-    display: none;
-}
-
-
-/* HERO SECTION */
-/* ABOUT SECTION */
-/* SERVICES SECTION */
-/* STATS SECTION */
-/* CONTACT SECTION */
-/* FOOTER SECTION */
-
-
-/* FAQ SECTION */
-.faq {
-    min-height: 70vh;
-    width: 100vw;
-    text-align: center;
-    padding: 0 2rem;
-    background: url(../images/faq.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.faq .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 2rem;
-}
-
-.faq .row .accordion-container {
-    width: 50%;
-    text-align: left;
-}
-
-.faq .row .accordion {
-    margin-left: 1rem;
-    margin-right: 2rem;
-}
-
-.faq .row .accordion-container .accordion .accordion-header {
-    background-color: #00bfff;
-    margin: 1rem 0;
-    box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, .3);
-    cursor: pointer;
-    margin-left: 1rem;
-    margin-right: 2rem;
-}
-
-.faq .row .accordion-container .accordion .accordion-header span {
-    display: inline-block;
-    text-align: center;
-    height: 4rem;
-    width: 5rem;
-    line-height: 4rem;
-    font-size: 2rem;
-    background: #333;
-    color: #fff;
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-}
-
-.faq .row .accordion-container .accordion .accordion-header h3 {
-    display: inline;
-    color: #333;
-    font-weight: 400;
-    padding-left: .5rem;
-    font-size: 1.5rem;
-}
-
-.faq .row .accordion-container .accordion .accordion-body {
-    padding: 1rem;
-    color: #444;
-    box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, .3);
-    background-color: #fff;
-    font-size: 1.3rem;
-    display: none;
-    margin-left: 1rem;
-    margin-right: 2rem;
-}
-
 
 /* Responsive design */
 @media (max-width: 1000px) {
@@ -390,3 +301,74 @@ body {
         width: 100%;
     }
 }
+
+
+/* FAQ SECTION */
+/* 
+.faq {
+    min-height: 70vh;
+    width: 100vw;
+    text-align: center;
+    padding: 0 2rem;
+    background: url('/images/faq.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.faq .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.faq .row .accordion-container {
+    width: 50%;
+    text-align: left;
+}
+
+.faq .row .accordion {
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+.faq .row .accordion-container .accordion .accordion-header {
+    background-color: #00bfff;
+    margin: 1rem 0;
+    box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, .3);
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+.faq .row .accordion-container .accordion .accordion-header span {
+    display: inline-block;
+    text-align: center;
+    height: 4rem;
+    width: 5rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    background: #333;
+    color: #fff;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.faq .row .accordion-container .accordion .accordion-header h3 {
+    display: inline;
+    color: #333;
+    font-weight: 400;
+    padding-left: .5rem;
+    font-size: 1.5rem;
+}
+
+.faq .row .accordion-container .accordion .accordion-body {
+    padding: 1rem;
+    color: #444;
+    box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, .3);
+    background-color: #fff;
+    font-size: 1.3rem;
+    display: none;
+    margin-left: 1rem;
+    margin-right: 2rem;
+} */

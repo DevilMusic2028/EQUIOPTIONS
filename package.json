@@ -1,43 +1,27 @@
 {
   "name": "equioptions",
-  "version": "1.0.0",
-  "description": "equioptions",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
-
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "npm run clean && npm run assets:copy && npm run js:copy && npm run html:copy && npm run css:build",
-    "clean": "rm -rf dist",
-    "css:dev": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/styles.css --watch", 
-    "css:build": "npx @tailwindcss/cli -i ./src/css/input.css -o dist/css/styles.css",
-    "assets:copy": "mkdir -p dist/ && cp -r src/images/ dist/images/",
-    "js:copy": "mkdir -p dist/ && cp -r src/js dist/js",
-    "html:copy": "cp src/index.html dist/index.html"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DevilMusic2028/EQUIOPTIONS.git"
-  },
-
-  "keywords": [],
-
-  "author": "",
-
-  "license": "ISC",
-
-  "bugs": {
-    "url": "https://github.com/MaadhyamRana/EQUIOPTIONS/issues"
-  },
-
-  "homepage": "https://github.com/MaadhyamRana/EQUIOPTIONS#readme",
-  "devDependencies": {
-    "tailwindcss": "^4.0.7"
-  },
-
   "dependencies": {
-    "@tailwindcss/cli": "^4.0.7"
+    "@emailjs/browser": "^4.4.1",
+    "@tailwindcss/postcss": "^4.0.9",
+    "next": "15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-ionicons": "^4.2.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.9"
   }
 }
